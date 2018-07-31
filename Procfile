@@ -1,1 +1,1 @@
-web:    java -cp target/classes:target/dependency/* com.test.App
+web:    java -cp target/classes:target/dependency/* ag.ifpb.App
