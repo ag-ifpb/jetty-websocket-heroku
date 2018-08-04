@@ -22,10 +22,12 @@ public class UtilCliente {
         allocate.putInt(n2);
         allocate.putChar(operation);
         //
+        System.out.println(n1 + " " + operation + " (" + n2 + ") =");
+        //
         return allocate;
     }
     
-    public static ByteBuffer sendWithResult(int result, ByteBuffer allocate) {
+    public static ByteBuffer prepareWithResult(int result, ByteBuffer allocate) {
     	//
     	int n1 = random.nextInt(10);
         int n2 = result;
@@ -34,6 +36,8 @@ public class UtilCliente {
         allocate.putInt(n1);
         allocate.putInt(n2);
         allocate.putChar(operation);
+        //
+        System.out.println(n1 + " " + operation + " (" + n2 + ") =");
         //
         return allocate;
     }
